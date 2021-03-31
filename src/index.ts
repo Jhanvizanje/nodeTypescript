@@ -50,7 +50,7 @@ const userSchema = new mongoose.Schema({
 userSchema.plugin(passportLocalMongoose);
 interface UserModel<T extends Document> extends PassportLocalModel<T> {}
 
-let User: UserModel<UserInt> = model<User>('User', userSchema);
+let User: UserModel<UserInt> = model<UserInt>('User', userSchema);
 
 // const User = mongoose.model('User', userSchema);
 passport.use(User.createStrategy());
