@@ -60,8 +60,8 @@ passport.use(new LocalStrategy(User.authenticate()));
 
 // Google
 passport.use(new GoogleStrategy({
-  clientID: "492359324846-3pgob1j3v23gjqsk152vgq26cr0fisli.apps.googleusercontent.com",
-  clientSecret: "fdtCniC_tgp-W1uQGHmuwQEh",
+  clientID: "",
+  clientSecret: "" ,
   callbackURL: "http://localhost:3000/auth/google/callback",
   passReqToCallback   : true
 },
